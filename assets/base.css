@@ -11,7 +11,6 @@ h1 {
 }
 
 body {
-  margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -32,7 +31,7 @@ body {
 
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: #333;
+    background-color: #222;
     color: #eee;
   }
 }
