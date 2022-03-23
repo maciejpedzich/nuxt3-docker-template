@@ -7,9 +7,9 @@ const counter = useCounterStore();
 <template>
   <div id="counter-container">
     <p id="value">
-      Counter's value: {{ counter.value }}
+      Counter is currently set to {{ counter.value }}
       <strong id="perfect-square" v-if="counter.isPerfectSquare">
-        🎉 IT'S A PERFECT SQUARE 🎉
+        <em>🎉 IT'S A PERFECT SQUARE 🎉</em>
       </strong>
     </p>
     <div id="actions">
@@ -21,6 +21,7 @@ const counter = useCounterStore();
 
 <style scoped>
 #counter-container {
+  line-height: 1.5rem;
   text-align: center;
 }
 
@@ -32,6 +33,6 @@ const counter = useCounterStore();
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 8px;
+  gap: 0.625rem;
 }
 </style>
